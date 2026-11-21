@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Daily Edit - Stories, ideas and perspectives that matter.">
+    <title>The Daily Edit | Modern Editorial Magazine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>THE ART OF STAYING INFORMED</p>
+        <span>Independent stories. Fresh perspectives.</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">THE DAILY<span> EDIT.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="#home">Home</a>
+                <a href="#latest">Latest Stories</a>
+                <a href="#featured">Features</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <a href="#newsletter" class="header-button">Subscribe ↗</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero container" id="home">
+            <div class="hero-heading">
+                <span class="eyebrow">THE EDITORIAL JOURNAL</span>
+                <h1>Stories worth<br><span>your time.</span></h1>
+                <p>Ideas, culture, creativity and perspectives shaping the world around us.</p>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400&q=85" alt="Beautiful modern creative workspace">
+                <div class="hero-image-caption">
+                    <span>THE NEW PERSPECTIVE</span>
+                    <span>EST. 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Story -->
+        <section class="featured-section container" id="featured">
+            <div class="section-heading">
+                <span class="eyebrow">EDITOR'S PICK</span>
+                <span class="section-line"></span>
+                <span class="section-number">01 / FEATURED</span>
+            </div>
+
+            <article class="featured-story">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200&q=85" alt="Minimal creative office interior">
+                </div>
+
+                <div class="featured-content">
+                    <span class="category-badge">CULTURE & DESIGN</span>
+                    <h2>The beauty of slowing down in a world that never stops.</h2>
+                    <p>Discover why embracing a slower, more intentional lifestyle may be the key to creativity, balance and meaningful living.</p>
+
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Author Olivia Bennett">
+                        <div>
+                            <strong>Olivia Bennett</strong>
+                            <span>November 21, 2026 · 6 min read</span>
+                        </div>
+                    </div>
+
+                    <a href="#latest" class="read-link">EXPLORE THE STORY ↗</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Latest Stories -->
+        <section class="latest-section container" id="latest">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">CURATED FOR YOU</span>
+                    <h2>Latest Stories<span>.</span></h2>
+                </div>
+                <span class="section-number">02 / JOURNAL</span>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-category="All">All Stories</button>
+                <button class="filter-btn" data-category="Technology">Technology</button>
+                <button class="filter-btn" data-category="Lifestyle">Lifestyle</button>
+                <button class="filter-btn" data-category="Culture">Culture</button>
+                <button class="filter-btn" data-category="Design">Design</button>
+                <button class="filter-btn" data-category="Travel">Travel</button>
+            </div>
+
+            <div class="article-grid" id="articleGrid">
+                <!-- Articles will be rendered using JavaScript -->
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section" id="newsletter">
+            <div class="newsletter-inner container">
+                <span class="eyebrow">THE WEEKLY EDIT</span>
+                <h2>A little inspiration,<br>delivered weekly.</h2>
+                <p>Join our readers and receive thoughtful stories and fresh perspectives directly in your inbox.</p>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe ↗</button>
+                </form>
+
+                <p class="newsletter-message" id="newsletterMessage" aria-live="polite"></p>
+                <span class="newsletter-note">NO SPAM. JUST GOOD STORIES.</span>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section container" id="about">
+            <span class="eyebrow">OUR PHILOSOPHY</span>
+            <h2>Good stories create<br>better perspectives.</h2>
+            <p>The Daily Edit is an independent editorial space exploring the ideas, people and creative movements shaping modern life.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#" class="logo">THE DAILY<span> EDIT.</span></a>
+            <p>© 2026 The Daily Edit. All rights reserved.</p>
+            <a href="#home">BACK TO TOP ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
